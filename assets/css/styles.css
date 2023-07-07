@@ -90,7 +90,7 @@ button {
     line-height: 1.19;
 }
 
-.section__desc {
+.section-desc {
     margin-top: 24px;
     color: #656689;
     font-size: 1.6rem;
@@ -477,4 +477,95 @@ button {
 .about__decor-img:last-child {
     bottom: -53px;
     right: -44px;
+}
+
+.about__desc-bottom {
+    width: 511px;
+    margin-bottom: 50px;
+}
+
+.tab__list {
+    position: relative;
+    display: inline-flex;
+    column-gap: 56px;
+}
+
+.tab__item--active::after,
+.tab__list::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    border-radius: 99px;
+    opacity: 0.07;
+    background: #ff5b2e;
+}
+
+.tab__item--active::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.tab__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    column-gap: 12px;
+    cursor: pointer;
+}
+
+.tab__icon {
+    width: 20px;
+}
+
+.tab__title {
+    color: #48496a;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.tab__contents {
+    padding-top: 36px;
+}
+
+.tab__content-item {
+    display: none;
+}
+
+.tab__content-item--active {
+    display: block;
+}
+
+.tab__content-desc {
+    width: 391px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.tab__content-more {
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    color: #ff5d31;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.tab__content-more::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    bottom: -5px;
+    left: 0;
+    width: 86px;
+    height: 1.5px;
+    border-radius: 99px;
+    background: #ff5d31;
 }
