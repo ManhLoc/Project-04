@@ -1188,7 +1188,7 @@ button {
 /* Footer */
 .footer {
     margin-top: 53px;
-    background: #fff6ed;
+    background: linear-gradient(to right, #fff6ed 42.7%, #fffaf5 42.7%);
 }
 
 .footer__inner {
@@ -1196,6 +1196,7 @@ button {
 }
 
 .footer__left {
+    width: 42.7%;
     padding: 114px 212px 148px 0;
 }
 
@@ -1219,6 +1220,14 @@ button {
     border: none;
     outline: none;
     border-radius: 23px;
+    font-size: 1.4rem;
+}
+
+.search-form__input::placeholder {
+    color: #656689;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.17;
 }
 
 .search-form__submit {
@@ -1267,4 +1276,40 @@ button {
 .social-item:hover {
     opacity: 0.6;
     cursor: pointer;
+}
+
+.footer__right {
+    flex: 1;
+    padding: 52px 0 48px 0;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 129px;
+    column-gap: 137px;
+    row-gap: 58px;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.footer__link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    margin: 52px 0 0 22px;
+    color: #656689;
+    font-size: 1.2rem;
+    line-height: 1.17;
+    opacity: 0.5;
 }
